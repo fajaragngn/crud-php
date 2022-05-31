@@ -1,4 +1,5 @@
 <?php
+
 $host = "localhost";
 $user = "root";
 $pass = "";
@@ -9,4 +10,8 @@ if ($conn == false)
 echo "Koneksi ke server gagal.";
 die();
 } #else echo "Koneksi berhasil";
+
+$sql = 'SELECT * FROM data_barang';
+$result = mysqli_query($conn, $sql);
+
 ?>
